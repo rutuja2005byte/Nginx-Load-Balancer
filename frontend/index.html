@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nginx Load Balancer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Nginx Load Balancer</h1>
+
+        <p>
+            Reverse Proxy + Load Balancer + Docker
+        </p>
+
+        <button onclick="checkServer()">
+            Send Request
+        </button>
+
+        <div id="result">
+            Click the button to send a request.
+        </div>
+
+    </div>
+
+    <script>
+        async function checkServer() {
+
+            const result = document.getElementById("result");
+
+            result.innerText = "Sending request...";
+
+            try {
+
+                const response = await fetch("/api/status");
+
+                const data = await response.json();
+
+                result.innerHTML = `
+                    <h2>Response Received</h2>
+                    <p><strong>Server:</strong> ${data.server}</p>
+                    <p><strong>Status:</strong> ${data.status}</p>
+                `;
+
+            } catch (error) {
+
+                result.innerText = "Request failed.";
+
+            }
+        }
+    </script>
+
+</body>
+</html>
