@@ -14,3 +14,4 @@
 192.168.65.1 - - [08/Aug/2026:12:59:41 +0000] "GET /api/status HTTP/1.1" 200 41 "http://localhost/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
 192.168.65.1 - - [08/Aug/2026:12:59:42 +0000] "GET /api/status HTTP/1.1" 200 41 "http://localhost/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
 192.168.65.1 - - [08/Aug/2026:12:59:42 +0000] "GET /api/status HTTP/1.1" 200 41 "http://localhost/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+192.168.65.1 - - [08/Aug/2026:13:06:10 +0000] "GET / HTTP/1.1" 200 1256 "-" "curl/8.7.1"
