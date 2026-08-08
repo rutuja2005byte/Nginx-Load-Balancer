@@ -27,6 +27,13 @@ app.get("/health", (req, res) => {
     });
 });
 
+app.get("/api/status", (req, res) => {
+    res.json({
+        server: SERVER_NAME,
+        status: "running"
+    });
+});
+
 app.listen(PORT, () => {
     console.log(`${SERVER_NAME} running on port ${PORT}`);
 });
